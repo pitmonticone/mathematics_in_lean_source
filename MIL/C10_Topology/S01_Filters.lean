@@ -49,7 +49,7 @@ condition then says that ``univ`` is sufficiently large, the second one says tha
 large set is sufficiently large and the third one says that the intersection of two sufficiently large sets
 is sufficiently large.
 
-It may be even  more useful to think of a filter on a type ``X``
+It may be even more useful to think of a filter on a type ``X``
 as a generalized element of ``Set X``. For instance, ``atTop`` is the
 "set of very large numbers" and ``𝓝 x₀`` is the "set of points very close to ``x₀``."
 One manifestation of this view is that we can associate to any ``s : Set X`` the so-called *principal filter*
@@ -174,7 +174,7 @@ EXAMPLES: -/
 -- QUOTE.
 
 /- TEXT:
-Together these two properties allow us to prove that limits compose, yielding in one shot all 256 variants
+Together these two properties allow us to prove that limits compose, yielding in one shot all 512 variants
 of the composition lemma described in the introduction, and lots more.
 You can practice proving the following statement using either the definition
 of ``Tendsto₁`` in terms of the
