@@ -681,7 +681,7 @@ in Mathlib, and also in this chapter. Already at the very beginning we saw one c
 from ``Monoid₁ α`` to ``Dia₁ α`` through either ``Semigroup₁ α`` or ``DiaOneClass₁ α`` and
 thanks to the work done by the ``class`` command, the resulting two ``Dia₁ α`` instances
 are definitionally equal. In particular a diamond having a ``Prop``-valued class at the bottom
-cannot be bad since any too proofs of the same statement are definitionally equal.
+cannot be bad since any two proofs of the same statement are definitionally equal.
 
 But the diamond we created with modules is definitely bad. The offending piece is the ``smul``
 field which is data, not a proof, and we have two constructions that are not definitionally equal.
@@ -759,10 +759,9 @@ As an exercise, you can come back to the order relation hierarchy you built abov
 to incorporate a type class ``LT₁`` carrying the Less-Than notation ``<₁`` and make sure
 that every preorder comes with a ``<₁`` which has a default value built from ``≤₁`` and a
 ``Prop``-valued field asserting the natural relation between those two comparison operators.
--/
+TEXT. -/
 
 -- SOLUTIONS:
-
 class LT₁ (α : Type) where
   /-- The Less-Than relation -/
   lt : α → α → Prop
